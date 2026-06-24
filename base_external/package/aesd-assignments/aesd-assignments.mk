@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = '55e975fb4aeef5ee09147a2544d4fafe9dcc42a4'
+AESD_ASSIGNMENTS_VERSION = '158f039a6b6def03ab78a281ba1a7d9bd0c03b64'
 AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-gcalgaro.git'
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
