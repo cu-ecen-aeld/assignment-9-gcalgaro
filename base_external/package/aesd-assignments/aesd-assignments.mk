@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = '1fac368474adb203d793870e5b2d55ca51c2e2ff'
+AESD_ASSIGNMENTS_VERSION = '29a178bdc67258b1b656ee759792aa27bb9f9903'
 AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-gcalgaro.git'
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
@@ -14,7 +14,7 @@ AESD_ASSIGNMENTS_MAKE_OPTS += USE_AESD_CHAR_DEVICE=1
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
 	$(MAKE) CC=$(TARGET_CC) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app all
-	$(MAKE) CC=$(TARGET_CC) $(TARGET_CONFIGURE_OPTS) -C $(@D)/server all
+	$(MAKE) CC=$(TARGET_CC) $(TARGET_CONFIGURE_OPTS) CFLAGS="$(TARGET_CFLAGS) -DUSE_AESD_CHAR_DEVICE" -C $(@D)/server all
 endef
 
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
